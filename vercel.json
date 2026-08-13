@@ -1,13 +1,17 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "functions": {
     "api/whop-page.js": {
       "includeFiles": "index.html"
     }
   },
-  "rewrites": [
+  "routes": [
     {
-      "source": "/",
-      "destination": "/api/whop-page"
+      "src": "^/$",
+      "dest": "/api/whop-page.js"
+    },
+    {
+      "handle": "filesystem"
     }
   ]
 }
