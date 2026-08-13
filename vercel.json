@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/whop-page.js": {
+      "includeFiles": "index.html"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api/whop-page"
+    }
+  ]
+}
